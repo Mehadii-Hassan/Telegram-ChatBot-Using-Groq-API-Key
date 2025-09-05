@@ -98,7 +98,6 @@ GROQ_API_KEY=your-groq-api-key
 
 <p>
 Created by <strong>Mehedi Hassan</strong> using <code>aiogram</code> and <code>Groq API</code> (LLaMA 3.1).  
-Special thanks to Groq for providing fast inference models.
 </p>
 
 <hr>
