@@ -1,4 +1,4 @@
-<h1 align="center">🤖 Mehu - Telegram AI Chatbot</h1>
+<h1 align="center">🤖 Telegram AI Chatbot</h1>
 
 <p align="center">
   <strong>A conversational AI Telegram bot powered by Groq's LLaMA 3.1 model</strong><br>
