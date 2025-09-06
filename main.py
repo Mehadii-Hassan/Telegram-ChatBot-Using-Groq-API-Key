@@ -1,22 +1,38 @@
 from dotenv import load_dotenv
 import os
 from aiogram import Bot, Dispatcher, executor, types
-from groq import Groq
+from groq import Groq #for groq
+# import openai #for openai
+# import sys #for openai
 
 load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+"""
+---for openai---
+openai.api_key = os.getenv("OpenAI_API_KEY")   
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN") 
+"""
 
 client = Groq(api_key=GROQ_API_KEY)
-
 class Reference:
     def __init__(self) -> None:
         self.response = ""
-
 reference = Reference()
-
 model_name = "llama-3.1-8b-instant"
 
+"""
+---for openai---
+class Reference:
+    '''
+    A class to store previously response from the openai API
+    '''
+    def __init__(self) -> None:
+        self.response = ""
+reference = Reference()
+model_name = "gpt-3.5-turbo"
+"""
+# Initialize bot and dispatcher
 bot = Bot(token=TELEGRAM_BOT_TOKEN)
 dispatcher = Dispatcher(bot)
 
